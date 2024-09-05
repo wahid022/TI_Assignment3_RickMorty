@@ -1,0 +1,93 @@
+.filter-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.filter-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  color: #343a40;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.badge-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* Space between badges */
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  background-color: #007bff; /* Badge color */
+  color: #fff; /* Text color */
+  cursor: pointer;
+  position: relative; /* Allows absolute positioning of the button */
+}
+
+.badge:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.badge-text {
+  margin-right: 28px; /* Ensure enough space for the button */
+}
+
+.btn-close-white {
+  background: transparent;
+  border: none;
+  color: #fff; /* White color for contrast */
+  font-size: 1.25rem; /* Larger font size for better visibility */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 8px; /* Position within the badge */
+  transform: translateY(-50%); /* Center vertically */
+  padding: 0; /* Remove default padding */
+  line-height: 1; /* Adjust line-height to fit the button properly */
+  width: 20px; /* Ensure button has a visible size */
+  height: 20px; /* Ensure button has a visible size */
+}
+
+.btn-close-white::before {
+  content: '×'; /* Unicode character for multiplication sign */
+}
+
+.btn-close-white:hover {
+  color: #ff0000; /* Bright red color on hover */
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  color: #495057;
+}
+
+.form-check-input:checked + .form-check-label {
+  color: #007bff;
+}
+
+.form-check-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
